@@ -99,9 +99,18 @@
         .form-group select {
             width: 100%;
             padding: 0.75rem;
-            border: 1px solid #ddd;
+            border: 2px solid #333;
             border-radius: 5px;
-            font-size: 1rem;
+            font-size: 1.1rem;
+            background-color: #fff5eb;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
         }
 
         .btn {
@@ -113,7 +122,7 @@
             font-size: 1.1rem;
             cursor: pointer;
             width: 100%;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
         }
 
         .btn:hover {
@@ -206,7 +215,7 @@
         <div class="form-container">
             <h2>Request Google Business Profile (GBP) Reactivation</h2>
             <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
+                <input type="hidden" name="form-name" value="contact">
                 
                 <div class="form-group">
                     <label for="name">Name *</label>
