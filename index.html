@@ -122,7 +122,7 @@
             font-size: 1.1rem;
             cursor: pointer;
             width: 100%;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
         }
 
         .btn:hover {
@@ -214,13 +214,8 @@
 
         <div class="form-container">
             <h2>Request Google Business Profile (GBP) Reactivation</h2>
-            <form action="https://formsubmit.co/fastrackgbp@gmail.com" method="POST">
-                <input type="hidden" name="_subject" value="New GBP Reactivation Request">
-                <input type="hidden" name="_autoresponse" value="Thank-you for contacting Fast Track GBP, we will reply right away. Be on the lookout for an email from fastrackgbp@gmail.com that will provide next steps.">
-                <input type="hidden" name="_next" value="https://lighthearted-unicorn-79fb4a.netlify.app/thank-you.html">
-                <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_honeypot" value="">
-                <input type="hidden" name="_captcha" value="false">
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
                 
                 <div class="form-group">
                     <label for="name">Name *</label>
