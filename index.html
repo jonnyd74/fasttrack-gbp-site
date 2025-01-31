@@ -314,11 +314,17 @@
                 appeals_details: document.getElementById('appeals_details').value
             };
 
+            // Send admin notification
             emailjs.send('service_gidyyh8', 'template_ftxpoqb', templateParams)
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
+                .then(function() {
+                    // After admin notification succeeds, send customer auto-response
+                    return emailjs.send('service_gidyyh8', 'template_pez2qbp', templateParams);
+                })
+                .then(function() {
+                    // After both emails sent successfully, redirect to thank you page
                     window.location.href = '/thank-you.html';
-                }, function(error) {
+                })
+                .catch(function(error) {
                     console.log('FAILED...', error);
                     alert('Error sending message. Please try again.');
                 });
