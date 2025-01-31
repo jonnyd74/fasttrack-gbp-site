@@ -3,12 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Track Google Business Profile (GBP)</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("uffbQKHqppJjeaiUL");
-        })();
-    </script>
     <style>
         :root {
             --primary: #ff7417;
@@ -220,7 +214,13 @@
 
         <div class="form-container">
             <h2>Request Google Business Profile (GBP) Reactivation</h2>
-            <form id="reactivation-form" onsubmit="return sendEmail(event)">
+            <form action="https://formsubmit.co/fastrackgbp@gmail.com" method="POST">
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting Fast Track GBP regarding your Google Business Profile reactivation request. This email confirms we've received your submission. Our team will review your case and contact you shortly with specific next steps and payment details. If you don't receive our follow-up email within 24 hours, please check your spam folder or reply to this email.">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New GBP Reactivation Request">
+                <input type="hidden" name="_next" value="https://lighthearted-unicorn-79fb4a.netlify.app/thank-you">
+                
                 <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required>
@@ -239,27 +239,27 @@
                 <div class="form-group">
                     <label>Is your Google Business Profile currently suspended? *</label>
                     <div style="margin: 10px 0;">
-                        <select name="suspended" id="suspended" required>
+                        <select name="suspended" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
                             <option value="">Please select...</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                             <option value="N/A">N/A</option>
                         </select>
                     </div>
-                    <textarea name="suspension_details" id="suspension_details" placeholder="Additional details about suspension (optional)" rows="2"></textarea>
+                    <textarea name="suspension_details" placeholder="Additional details about suspension (optional)" rows="2"></textarea>
                 </div>
 
                 <div class="form-group">
                     <label>Did Google say that you are out of appeals? *</label>
                     <div style="margin: 10px 0;">
-                        <select name="appeals" id="appeals" required>
+                        <select name="appeals" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
                             <option value="">Please select...</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                             <option value="N/A">N/A</option>
                         </select>
                     </div>
-                    <textarea name="appeals_details" id="appeals_details" placeholder="Additional details about appeals (optional)" rows="2"></textarea>
+                    <textarea name="appeals_details" placeholder="Additional details about appeals (optional)" rows="2"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -297,34 +297,5 @@
             <p style="max-width: 800px; margin: 1rem auto 0; color: #888; font-size: 0.8rem;">* Timeline estimates based on historical results. We provide best efforts for reinstatement within stated timeframes.</p>
         </div>
     </div>
-
-    <script>
-        function sendEmail(e) {
-            e.preventDefault();
-
-            // Get form values
-            const templateParams = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                business: document.getElementById('business').value,
-                suspended: document.getElementById('suspended').value,
-                appeals: document.getElementById('appeals').value,
-                additional: document.getElementById('additional').value,
-                suspension_details: document.getElementById('suspension_details').value,
-                appeals_details: document.getElementById('appeals_details').value
-            };
-
-            emailjs.send('service_gidyyh8', 'template_ftxpoqb', templateParams)
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    window.location.href = '/thank-you.html';
-                }, function(error) {
-                    console.log('FAILED...', error);
-                    alert('Error sending message. Please try again.');
-                });
-
-            return false;
-        }
-    </script>
 </body>
 </html>
