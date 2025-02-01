@@ -45,7 +45,6 @@
 
         .hero {
             background: linear-gradient(135deg, var(--secondary), var(--accent));
-            color: var(--light);
             padding: 4rem 2rem;
             text-align: center;
             margin-bottom: 2rem;
@@ -54,6 +53,7 @@
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            color: black;
         }
 
         .hero p {
@@ -108,8 +108,14 @@
             border: 2px solid #333;
             border-radius: 5px;
             font-size: 1.1rem;
-            background-color: #fff5eb;
+            background-color: #ffe8d4;
             transition: border-color 0.3s ease;
+        }
+
+        .form-group textarea::placeholder {
+            color: #999;
+            font-style: italic;
+            font-weight: 300;
         }
 
         .form-group input:focus,
@@ -149,7 +155,6 @@
 
         .testimonials {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--light);
             padding: 3rem 2rem;
             margin: 3rem 0;
             border-radius: 10px;
@@ -166,10 +171,16 @@
         .testimonial-text {
             font-style: italic;
             margin-bottom: 1rem;
+            color: black;
         }
 
         .testimonial-author {
             font-weight: bold;
+            color: black;
+        }
+
+        .testimonials h2 {
+            color: black;
         }
 
         .star-rating {
@@ -196,7 +207,7 @@
     <section class="hero">
         <h1>Reactivate Your Google Business Profile</h1>
         <p style="font-size: 1.4rem; margin-bottom: 1.5rem; color: white;">🔍 Was your Google Business Profile suspended without warning? Appeals exhausted? We're here to help.</p>
-        <p style="font-size: 1.6rem; color: white; font-weight: 600; margin-top: 1rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.1)">⚡ Through our <i>exclusive partnership</i> status, we deliver unparalleled <b>Google Business Profile (GBP) reactivation</b> services with industry-leading turnaround times, ensuring your business regains its online presence swiftly and efficiently. ⚡</p>
+        <p style="font-size: 1.6rem; color: black; font-weight: 600; margin-top: 1rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.1)">⚡ Through our <i>exclusive partnership</i> status, we deliver unparalleled <b>Google Business Profile (GBP) reactivation</b> services with industry-leading turnaround times, ensuring your business regains its online presence swiftly and efficiently. ⚡</p>
     </section>
 
     <div class="container">
