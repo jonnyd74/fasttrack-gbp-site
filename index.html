@@ -3,12 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fast Track Google Business Profile (GBP)</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("uffbQKHqppJjeaiUL");
-        })();
-    </script>
     <style>
         :root {
             --primary: #ff7417;
@@ -45,6 +39,7 @@
 
         .hero {
             background: linear-gradient(135deg, var(--secondary), var(--accent));
+            color: var(--light);
             padding: 4rem 2rem;
             text-align: center;
             margin-bottom: 2rem;
@@ -53,7 +48,6 @@
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            color: white;
         }
 
         .hero p {
@@ -201,24 +195,20 @@
 </head>
 <body>
     <header class="header">
-        <div style="display: flex; align-items: center; justify-content: center; gap: 15px;">
-            <img src="logo.png" alt="Fast Track GBP Logo" style="height: 80px; width: auto; padding: 5px;">
-            <h2>🚀 Fast Track Google Business Profile (GBP)</h2>
-        </div>
+        <h2>🚀 Fast Track Google Business Profile (GBP)</h2>
     </header>
 
     <section class="hero">
         <h1>Reactivate Your Google Business Profile</h1>
         <p style="font-size: 1.4rem; margin-bottom: 1.5rem; color: black;">🔍 Was your Google Business Profile suspended without warning? Appeals exhausted? We're here to help.</p>
-        <p style="font-size: 1.4rem; color: black; font-weight: 600; margin-top: 2rem;">We do not advise on how to reinstate your Google Business Profile, we will get your Google Business Profile REINSTATED.</p>
-        <p style="font-size: 1.6rem; color: black; font-weight: 600; margin-top: 2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.1)">⚡ Through our <i>exclusive partnership</i> status, we deliver unparalleled <b>Google Business Profile (GBP) reactivation</b> services with industry-leading turnaround times, ensuring your business regains its online presence swiftly and efficiently. ⚡</p>
+        <p style="font-size: 1.6rem; color: black; font-weight: 600; margin-top: 1rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.1)">⚡ Through our <i>exclusive partnership</i> status, we deliver unparalleled <b>Google Business Profile (GBP) reactivation</b> services with industry-leading turnaround times, ensuring your business regains its online presence swiftly and efficiently. ⚡</p>
     </section>
 
     <div class="container">
         <div class="features">
             <div class="feature-card">
                 <div class="emoji">🤝</div>
-                <h3>Strategic Google Partnership</h3>
+                <h3>Google Business Ambassador</h3>
                 <p>Through our official partnership with Google, we deliver the fastest GBP reactivation service available.</p>
             </div>
             <div class="feature-card">
@@ -235,7 +225,13 @@
 
         <div class="form-container">
             <h2>Request Google Business Profile (GBP) Reactivation</h2>
-            <form id="reactivation-form" onsubmit="return sendEmail(event)">
+            <form action="https://formsubmit.co/fastrackgbp@gmail.com" method="POST">
+                <input type="hidden" name="_autoresponse" value="Thank you for contacting Fast Track GBP regarding your Google Business Profile reactivation request. This email confirms we've received your submission. Our team will review your case and contact you shortly with specific next steps and payment details. If you don't receive our follow-up email within 24 hours, please check your spam folder or reply to this email.">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New GBP Reactivation Request">
+                <input type="hidden" name="_next" value="https://lighthearted-unicorn-79fb4a.netlify.app/thank-you">
+                
                 <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required>
@@ -254,27 +250,27 @@
                 <div class="form-group">
                     <label>Is your Google Business Profile currently suspended? *</label>
                     <div style="margin: 10px 0;">
-                        <select name="suspended" id="suspended" required>
+                        <select name="suspended" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
                             <option value="">Please select...</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                             <option value="N/A">N/A</option>
                         </select>
                     </div>
-                    <textarea name="suspension_details" id="suspension_details" placeholder="Additional details about suspension (optional)" rows="2"></textarea>
+                    <textarea name="suspension_details" placeholder="Additional details about suspension (optional)" rows="2"></textarea>
                 </div>
 
                 <div class="form-group">
                     <label>Did Google say that you are out of appeals? *</label>
                     <div style="margin: 10px 0;">
-                        <select name="appeals" id="appeals" required>
+                        <select name="appeals" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
                             <option value="">Please select...</option>
                             <option value="Yes">Yes</option>
                             <option value="No">No</option>
                             <option value="N/A">N/A</option>
                         </select>
                     </div>
-                    <textarea name="appeals_details" id="appeals_details" placeholder="Additional details about appeals (optional)" rows="2"></textarea>
+                    <textarea name="appeals_details" placeholder="Additional details about appeals (optional)" rows="2"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -309,47 +305,11 @@
 
         <div class="disclaimer" style="text-align: center; margin: 2rem 0; padding: 2rem; background: #f8f9fa; border-radius: 10px;">
             <p style="max-width: 800px; margin: 0 auto; color: #666;">Unlike standard SEO firms that only provide strategic advice for GBP reinstatement - leaving you waiting weeks or months for Google to acknowledge appeals - we directly facilitate Google Business Profile (GBP) reactivation.</p>
-            <p style="max-width: 800px; margin: 1rem auto; color: #666; font-weight: bold;">We do not advise on how to reinstate your Google Business Profile, we will get your Google Business Profile REINSTATED.</p>
             <p style="max-width: 800px; margin: 0 auto; color: #666;">Our standard service typically delivers GBP activation in 1-3 days, while Express Activation will typically yield GBP reactivation within 24 hours.</p>
             <p style="max-width: 800px; margin: 1rem auto 0; color: #888; font-size: 0.8rem;">* Timeline estimates based on historical results. We provide best efforts for reinstatement within stated timeframes.</p>
             <p style="max-width: 800px; margin: 1rem auto 0; color: #888; font-size: 0.8rem;">Be sure to check your Junk Mail/Spam folder.</p>
             <p style="max-width: 800px; margin: 1rem auto 0; color: #888; font-size: 0.8rem;">GBP Reactivation Services and Reviews provided by Design Right 4 U</p>
         </div>
     </div>
-
-    <script>
-        function sendEmail(e) {
-            e.preventDefault();
-
-            // Get form values
-            const templateParams = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                business: document.getElementById('business').value,
-                suspended: document.getElementById('suspended').value,
-                appeals: document.getElementById('appeals').value,
-                additional: document.getElementById('additional').value,
-                suspension_details: document.getElementById('suspension_details').value,
-                appeals_details: document.getElementById('appeals_details').value
-            };
-
-            // Send admin notification
-            emailjs.send('service_gidyyh8', 'template_ftxpoqb', templateParams)
-                .then(function() {
-                    // After admin notification succeeds, send customer auto-response
-                    return emailjs.send('service_gidyyh8', 'template_pez2qbp', templateParams);
-                })
-                .then(function() {
-                    // After both emails sent successfully, redirect to thank you page
-                    window.location.href = '/thank-you.html';
-                })
-                .catch(function(error) {
-                    console.log('FAILED...', error);
-                    alert('Error sending message. Please try again.');
-                });
-
-            return false;
-        }
-    </script>
 </body>
 </html>
