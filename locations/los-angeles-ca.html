@@ -10,9 +10,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <style>
         :root {
-            --primary: #f74417;
+            --primary: #ff7417;
             --secondary: #cf5a00;
-            --accent: #ffb44c;
+            --accent: #ffb40c;
             --text: #333;
             --light: #fff;
         }
@@ -27,13 +27,33 @@
             line-height: 1.6;
             color: var(--text);
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--light);
         }
         
         .header {
-            background: black;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
             color: var(--light);
             padding: 2rem 1rem;
             text-align: center;
+        }
+        
+        .header h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--light); /* WHITE text in header */
+        }
+        
+        .hero {
+            background: linear-gradient(to bottom, rgba(255,180,12,0.1), rgba(255,255,255,0));
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--text); /* BLACK */
+            margin-bottom: 1rem;
         }
         
         .container {
@@ -43,104 +63,205 @@
         }
         
         h1 {
+            color: var(--text); /* BLACK */
             font-size: 2.5rem;
-            margin-bottom: 1rem;
+            margin: 2rem 0 1rem;
         }
         
         h2 {
-            color: var(--primary);
-            margin: 2rem 0 1rem;
+            color: var(--text); /* BLACK */
+            margin: 2.5rem 0 1rem;
             font-size: 1.8rem;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+        
+        p {
+            margin: 1rem 0;
+            line-height: 1.8;
+            color: var(--text);
         }
         
         .cta-button {
             display: inline-block;
             background: var(--primary);
-            color: white;
-            padding: 1rem 2rem;
+            color: var(--light);
+            padding: 1rem 2.5rem;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: bold;
-            margin: 1rem 0;
+            font-size: 1.1rem;
+            margin: 1rem 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         
         .cta-button:hover {
             background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .service-box {
+            background: rgba(255,180,12,0.08);
+            border-left: 5px solid var(--accent);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+        
+        .service-box h2 {
+            margin-top: 0;
+            border: none;
+            padding: 0;
+            color: var(--text); /* BLACK */
         }
         
         ul {
             margin: 1rem 0 1rem 2rem;
+            line-height: 1.8;
         }
         
         li {
             margin: 0.5rem 0;
         }
         
+        ol {
+            margin: 1rem 0 1rem 2rem;
+            line-height: 1.8;
+        }
+        
+        ol li {
+            margin: 1rem 0;
+        }
+        
+        strong {
+            color: var(--primary);
+        }
+        
+        i {
+            font-style: italic;
+        }
+        
+        b {
+            font-weight: 600;
+        }
+        
         footer {
-            background: #f5f5f5;
+            background: #2c2c2c;
+            color: var(--light);
             padding: 2rem;
             text-align: center;
-            margin-top: 3rem;
+            margin-top: 4rem;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .header h2 {
+                font-size: 1.4rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .cta-button {
+                display: block;
+                margin: 1rem 0;
+            }
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1>🆘 GBP Rescue Services in Los Angeles, CA</h1>
-        <p>Emergency Google Business Profile Recovery</p>
-        <a href="/" class="cta-button">Get Emergency Help Now</a>
+        <h2>🚨 GBP Rescue - Google Business Profile (GBP) Recovery Services in Los Angeles, CA</h2>
     </header>
+    
+    <section class="hero">
+        <h1>Reactivate Your Google Business Profile in Los Angeles</h1>
+        <p style="font-size: 1.4rem; margin-bottom: 1.5rem; color: black;">🔍 Was your Google Business Profile suspended without warning? Appeals exhausted? We're here to help Los Angeles businesses.</p>
+        <p style="font-size: 1.6rem; color: black; font-weight: 600; margin-top: 1rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.1)">⚡ Through our <i>exclusive partnership</i> status, we deliver unparalleled <b>Google Business Profile (GBP) reactivation</b> services to Los Angeles, CA businesses with industry-leading turnaround times. ⚡</p>
+        <a href="/" class="cta-button">Get Emergency Help Now</a>
+    </section>
     
     <main class="container">
         <section>
-            <h2>Emergency GBP Recovery in Los Angeles</h2>
-            <p>When your Google Business Profile gets suspended in Los Angeles, every hour counts. From Santa Monica to Downtown LA, from Hollywood to the San Fernando Valley, businesses across the greater Los Angeles area depend on their GBP listings to attract customers in one of the most competitive markets in the world. Whether you run a restaurant on Melrose, a production company in Burbank, or a retail shop on Rodeo Drive, a suspended profile means invisible to the millions of people searching for businesses like yours every single day.</p>
+            <h2>Emergency GBP Recovery for Los Angeles Businesses</h2>
+            <p>When your GBP "Google Business Profile" gets suspended in Los Angeles, every hour of downtime costs you customers. From Santa Monica to Downtown LA, from Hollywood to the San Fernando Valley, businesses across the greater Los Angeles area depend on their GBP listings to attract customers in one of the most competitive markets in the world. Whether you run a production company in Burbank, a restaurant on Melrose Avenue, a tech startup in Playa Vista, or a retail boutique on Rodeo Drive, a suspended profile means you're invisible to the millions of people searching for businesses like yours every single day.</p>
             
-            <p>Los Angeles businesses face unique challenges when it comes to Google Business Profile management. With fierce competition across entertainment, hospitality, retail, and professional services industries, your GBP listing is often the first impression potential customers have of your business. Our emergency recovery specialists understand the LA market and work around the clock to restore your visibility before you lose valuable customers to competitors.</p>
+            <p>Los Angeles businesses face unique challenges when it comes to GBP management. With fierce competition across entertainment, technology, hospitality, retail, and professional services industries, your GBP listing is often the first impression potential customers have of your business. The LA market moves fast—trends change overnight, neighborhoods evolve constantly, and consumer expectations are sky-high. Our emergency recovery specialists understand the Los Angeles business landscape and work around the clock to restore your visibility before you lose valuable customers to competitors.</p>
             
-            <p>We've helped hundreds of Los Angeles businesses recover from GBP suspensions, from single-location cafes in Silver Lake to multi-location chains across LA County. Our team knows the specific issues that affect LA businesses and can navigate Google's complex reinstatement process quickly and effectively.</p>
+            <p>We've successfully recovered hundreds of GBP profiles for Los Angeles businesses, from single-location coffee shops in Silver Lake to multi-location chains spanning LA County. Our team knows the specific compliance issues that affect LA businesses—from entertainment industry address requirements to service-area configurations for businesses serving the sprawling metropolitan area. We navigate Google's complex reinstatement process quickly and effectively, getting you back online while you focus on running your business.</p>
         </section>
         
         <section>
             <h2>Why Los Angeles Businesses Choose GBP Rescue</h2>
             <ul>
-                <li><strong>Local LA Expertise:</strong> We understand the unique competitive landscape of Los Angeles businesses, from Venice Beach boutiques to downtown professional services firms</li>
-                <li><strong>24-Hour Response Time:</strong> In a city that never sleeps, we provide emergency response when your profile gets suspended—because every hour offline costs you customers</li>
-                <li><strong>Entertainment Industry Specialists:</strong> Experience helping production companies, talent agencies, and creative businesses navigate GBP compliance requirements</li>
-                <li><strong>Multi-Location Support:</strong> Perfect for LA-area chains and franchises with locations across the sprawling metropolitan area from Pasadena to Long Beach</li>
-                <li><strong>Proven Track Record:</strong> Successfully recovered profiles for restaurants, retail stores, healthcare providers, real estate agencies, and service businesses throughout Greater Los Angeles</li>
+                <li><strong>Deep LA Market Knowledge:</strong> We understand the competitive landscape across Los Angeles—from Venice Beach boutiques to downtown professional firms, from Westside tech companies to Valley service businesses</li>
+                <li><strong>24-Hour Emergency Response:</strong> In a city that operates 24/7, we provide immediate support when your GBP gets suspended—because every hour offline means customers going to your competitors</li>
+                <li><strong>Entertainment & Creative Industry Specialists:</strong> Extensive experience helping production companies, talent agencies, studios, and creative businesses navigate GBP compliance requirements unique to the entertainment sector</li>
+                <li><strong>Multi-Location Expertise:</strong> Perfect for LA-area chains and franchises with locations across the sprawling region from Pasadena to Long Beach, from Malibu to Orange County borders</li>
+                <li><strong>Proven Success Record:</strong> Successfully recovered profiles for restaurants, retail stores, healthcare providers, real estate agencies, tech startups, legal firms, and service businesses throughout Greater Los Angeles</li>
             </ul>
         </section>
         
         <section>
             <h2>Common GBP Suspension Issues in Los Angeles</h2>
-            <p>Los Angeles businesses frequently encounter Google Business Profile suspensions due to the city's unique business environment. Entertainment-related businesses often struggle with address verification when operating from shared office spaces or production facilities. Restaurants and retail stores on busy commercial corridors sometimes face issues with address formatting or multiple businesses at the same location. Service-area businesses that work throughout LA County may inadvertently violate Google's guidelines by listing service areas incorrectly.</p>
+            <p>Los Angeles businesses frequently encounter GBP suspensions due to the city's unique business environment and intense competition. Entertainment-related businesses often struggle with address verification when operating from shared creative spaces, production facilities, or virtual offices common in the industry. Restaurants and retail stores on busy commercial corridors like Melrose, Abbott Kinney, or Third Street Promenade sometimes face issues with address formatting or multiple businesses sharing the same location. Service-area businesses that work throughout LA County—from plumbers serving the entire Westside to contractors working across the Valley—may inadvertently violate Google's service area guidelines.</p>
             
-            <p>We've seen an increase in suspensions affecting LA businesses in competitive industries like real estate, legal services, and healthcare, where aggressive marketing tactics can sometimes cross Google's policy lines. Businesses operating in trendy neighborhoods like Arts District, West Hollywood, or Culver City may face heightened scrutiny due to high volumes of new business listings in these rapidly developing areas.</p>
+            <p>We've seen increased suspensions affecting LA businesses in highly competitive industries like real estate, legal services, cosmetic dentistry, and healthcare, where aggressive marketing tactics or lead generation services can sometimes cross Google's policy boundaries. Businesses operating in rapidly gentrifying neighborhoods like Arts District, Culver City, or Highland Park may face heightened scrutiny due to high volumes of new business listings and frequent address changes in these evolving areas. Tech startups and digital agencies often encounter issues when they don't maintain a proper physical presence or when their business category doesn't align with their actual operations.</p>
             
-            <p>COVID-19 created additional complications for many Los Angeles businesses that changed their operating models, moved locations, or shifted to service-area only operations. These legitimate business changes can sometimes trigger automated suspensions if not handled properly within Google's system.</p>
+            <p>The COVID-19 pandemic created lasting complications for many Los Angeles businesses that changed their operating models, moved to new locations, or shifted to delivery-only or service-area operations. While these were legitimate business pivots, they can trigger automated suspensions if not properly documented and updated within Google's system. Additionally, businesses that expanded during the pandemic by adding new service areas or temporarily operating from residential addresses now face compliance challenges as Google enforces stricter verification requirements.</p>
         </section>
         
         <section>
             <h2>Our Los Angeles GBP Recovery Process</h2>
             <ol>
-                <li><strong>Emergency Assessment:</strong> We immediately analyze your suspended Los Angeles business profile to identify the specific violation or technical issue that triggered the suspension</li>
-                <li><strong>Documentation Preparation:</strong> Our team gathers and prepares all necessary verification documents, ensuring they meet Google's exact requirements for LA-area businesses</li>
-                <li><strong>Strategic Reinstatement Request:</strong> We craft a compelling, compliant reinstatement request that addresses Google's concerns while highlighting your legitimate business operations in Los Angeles</li>
-                <li><strong>Google Communication Management:</strong> We handle all back-and-forth communication with Google's support team, navigating their complex review process so you can focus on running your business</li>
-                <li><strong>Profile Optimization:</strong> Once reinstated, we ensure your Los Angeles business profile is fully optimized and compliant to prevent future suspensions</li>
+                <li><strong>Emergency Assessment & Diagnosis:</strong> We immediately analyze your suspended Los Angeles GBP to identify the specific violation, technical issue, or policy concern that triggered the suspension—whether it's address verification, service area problems, business category issues, or quality guideline violations</li>
+                <li><strong>Documentation & Evidence Gathering:</strong> Our team compiles all necessary verification documents tailored to Los Angeles business requirements—business licenses, lease agreements, utility bills, professional credentials, and photographic evidence—ensuring everything meets Google's exact specifications</li>
+                <li><strong>Strategic Reinstatement Request:</strong> We craft a comprehensive, compliant reinstatement appeal that directly addresses Google's concerns while demonstrating your legitimate business operations in Los Angeles with compelling evidence and proper formatting</li>
+                <li><strong>Google Communication Management:</strong> We handle all communication with Google's support team on your behalf, managing the complex back-and-forth review process, responding to additional requests, and escalating when necessary—so you can focus on serving your customers</li>
+                <li><strong>Profile Optimization & Protection:</strong> Once your GBP is reinstated, we optimize your profile for maximum visibility in the competitive Los Angeles market and implement safeguards to prevent future suspensions, ensuring long-term compliance and performance</li>
             </ol>
+        </section>
+        
+        <section class="service-box">
+            <h2>💼 Monthly GBP Consulting Services for Los Angeles</h2>
+            <p>Prevent future suspensions and optimize your Google Business Profile with our monthly consulting service. Our Los Angeles experts provide:</p>
+            <ul>
+                <li><strong>Monthly profile audits</strong> and compliance checks</li>
+                <li><strong>Ongoing optimization</strong> and updates</li>
+                <li><strong>Priority support</strong> for any issues (24-hour response)</li>
+                <li><strong>Review management</strong> and response strategies</li>
+                <li><strong>Protection from future suspensions</strong></li>
+            </ul>
+            <p><strong>Investment: Starting at $297/month for Los Angeles businesses</strong></p>
+            <a href="/" class="cta-button">Learn More About Monthly Consulting</a>
         </section>
         
         <section>
             <h2>Get Emergency Help in Los Angeles Now</h2>
-            <p>Don't let a suspended Google Business Profile cost you another day of customers in the competitive Los Angeles market. Our emergency recovery team is standing by to help restore your visibility and get your business back in front of the millions of people searching for services in LA every single day. Contact us now for immediate assistance with your suspended profile.</p>
-            <a href="/" class="cta-button">Contact Los Angeles GBP Experts</a>
+            <p>Don't let a suspended GBP cost you another day of business in the intensely competitive Los Angeles market. While your profile sits suspended, your competitors are capturing your customers—people who are actively searching for exactly what you offer right now. Our emergency recovery team is standing by to help restore your visibility and get your business back in front of the millions of people searching for services in LA every single day. We understand the urgency, we know the Los Angeles market, and we have the expertise to get results fast. Contact us immediately for priority assistance with your suspended profile.</p>
+            <a href="/" class="cta-button">📞 Contact Los Angeles GBP Experts</a>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 GBP Rescue | <a href="/">Home</a> | Emergency Profile Recovery Services</p>
+        <p>&copy; 2025 GBP Rescue | <a href="/">Home</a> | Emergency Profile Recovery & Consulting Services</p>
+        <p>Serving Los Angeles, CA and surrounding areas</p>
     </footer>
 </body>
 </html>
