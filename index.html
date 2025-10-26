@@ -227,73 +227,57 @@
         </div>
 
         <div class="form-container">
-            <h2>Request Google Business Profile (GBP) Reactivation</h2>
-            <form action="https://formsubmit.co/info@gbprescue.com" method="POST">
-                <input type="hidden" name="_autoresponse" value="Thank you for contacting GBP Rescue GBP regarding your Google Business Profile reactivation request. This email confirms we've received your submission. Our team will review your case and contact you shortly with specific next steps and payment details. If you don't receive our follow-up email within 24 hours, please check your spam folder or reply to this email.">
-                <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="New GBP Reactivation Request">
-                <input type="hidden" name="_next" value="https://lighthearted-unicorn-79fb4a.netlify.app/thank-you">
-                
-                <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="business">Business Name</label>
-                    <input type="text" id="business" name="business">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Is your Google Business Profile currently suspended? *</label>
-                    <div style="margin: 10px 0;">
-                        <select name="suspended" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
-                            <option value="">Please select...</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                            <option value="N/A">N/A</option>
-                        </select>
-                    </div>
-                    <textarea name="suspension_details" placeholder="Additional details about suspension (optional)" rows="2"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label>Did Google say that you are out of appeals? *</label>
-                    <div style="margin: 10px 0;">
-                        <select name="appeals" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
-                            <option value="">Please select...</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                            <option value="N/A">N/A</option>
-                        </select>
-                    </div>
-
-                <div class="form-group">
-                    <label>Do you require express activation (+$200)*?</label>
-                    <div style="margin: 10px 0;">
-                        <select name="express_activation" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
-                            <option value="">Please select...</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-
-                    <textarea name="appeals_details" placeholder="Additional details about appeals (optional)" rows="2"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="additional">Additional Information / Comments</label>
-                    <textarea id="additional" name="additional" rows="4"></textarea>
-                </div>
-
-                <button type="submit" class="btn">Submit Request</button>
-            </form>
+<form name="gbp-contact" method="POST" data-netlify="true" action="/thank-you.html" id="contact-form">
+    <!-- Netlify form identifier (required) -->
+    <input type="hidden" name="form-name" value="gbp-contact">
+    
+    <!-- Your form fields -->
+    <label for="name">Name *</label>
+    <input type="text" name="name" id="name" required>
+    
+    <label for="business">Business Name</label>
+    <input type="text" name="business" id="business">
+    
+    <label for="email">Email *</label>
+    <input type="email" name="email" id="email" required>
+    
+    <label for="suspended">Is your Google Business Profile currently suspended? *</label>
+    <select name="suspended" id="suspended" required>
+        <option value="">Please select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Not Sure">Not Sure</option>
+    </select>
+    
+    <label for="suspension_details">Additional details about suspension (optional)</label>
+    <textarea name="suspension_details" id="suspension_details" placeholder="Additional details about suspension (optional)"></textarea>
+    
+    <label for="appeals">Did Google say that you are out of appeals? *</label>
+    <select name="appeals" id="appeals" required>
+        <option value="">Please select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Not Sure">Not Sure</option>
+    </select>
+    
+    <label for="express_activation">Do you require express activation (+$200)? *</label>
+    <select name="express_activation" id="express_activation" required>
+        <option value="">Please select...</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    
+    <label for="consulting">Interested in GBP consulting services?</label>
+    <select name="consulting" id="consulting">
+        <option value="">Please select...</option>
+        <option value="Yes - Call me ASAP">Yes - Call me ASAP</option>
+        <option value="Yes - Email me details">Yes - Email me details</option>
+        <option value="No">No - Just recovery needed</option>
+        <option value="Maybe">Maybe - Tell me more</option>
+    </select>
+    
+    <button type="submit">Submit Request</button>
+</form>
         </div>
 
         <div class="testimonials">
