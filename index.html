@@ -228,107 +228,98 @@
 
         <div class="form-container">
 <!-- Contact Form Section -->
-<section style="background: linear-gradient(135deg, #fff6ef, #ffe3cc); padding: 3rem 1rem; margin: 3rem 0; border-radius: 10px;">
-  <div style="max-width: 650px; margin: 0 auto; border: 2px solid #ffb370; border-radius: 10px; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 2.5rem;">
-    <h2 style="text-align: center; color: #ff7417; margin-bottom: 2rem;">
-      Request Google Business Profile Reactivation
-    </h2>
-
-    <form name="gbp-contact" method="POST" data-netlify="true" action="/thank-you.html" id="contact-form">
-      <input type="hidden" name="form-name" value="gbp-contact">
-
-      <!-- Name Field -->
-      <div style="margin-bottom: 1.5rem;">
-        <label for="name" style="display:block;font-weight:600;margin-bottom:0.5rem;color:#333;">Name *</label>
-        <input type="text" name="name" id="name" required style="width:100%;padding:0.75rem;border:2px solid #ffb370;border-radius:5px;font-size:1rem;background:#fff8f2;box-sizing:border-box;">
-      </div>
-
-      <!-- Business Name Field -->
-      <div style="margin-bottom: 1.5rem;">
-        <label for="business" style="display:block;font-weight:600;margin-bottom:0.5rem;color:#333;">Business Name</label>
-        <input type="text" name="business" id="business" style="width:100%;padding:0.75rem;border:2px solid #ffb370;border-radius:5px;font-size:1rem;background:#fff8f2;box-sizing:border-box;">
-      </div>
-
-      <!-- Email Field -->
-      <div style="margin-bottom: 1.5rem;">
-        <label for="email" style="display:block;font-weight:600;margin-bottom:0.5rem;color:#333;">Email *</label>
-        <input type="email" name="email" id="email" required style="width:100%;padding:0.75rem;border:2px solid #ffb370;border-radius:5px;font-size:1rem;background:#fff8f2;box-sizing:border-box;">
-      </div>
-
-      <!-- Phone Field -->
-      <div style="margin-bottom: 1.5rem;">
-        <label for="phone" style="display:block;font-weight:600;margin-bottom:0.5rem;color:#333;">Phone Number (optional)</label>
-        <input type="tel" name="phone" id="phone" style="width:100%;padding:0.75rem;border:2px solid #ffb370;border-radius:5px;font-size:1rem;background:#fff8f2;box-sizing:border-box;">
-      </div>
-
-      <!-- Suspended Status -->
-      <div style="margin-bottom: 1.5rem;">
-        <label for="suspended" style="display:block;font-weight:600;margin-bottom:0.5rem;color:#333;">Is your Google Business Profile currently suspended? *</label>
-        <select name="suspended" id="suspended" required style="width:100%;padding:0.75rem;border:2px solid #ffb370;border-radius:5px;font-size:1rem;background:#fff8f2;box-sizing:border-box;">
-          <option value="">Please select...</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-          <option value="Not Sure">Not Sure</option>
-        </select>
-      </div>
-
-      <!-- Suspension Details -->
-      <div style="margin-bottom: 1.5rem;">
-        <label for="suspension_details" style="display:block;font-weight:600;margin-bottom:0.5rem;color:#333;">Additional details about suspension (optional)</label>
-        <textarea name="suspension_details" id="suspension_details" rows="4" placeholder="Tell us more about your suspension..." style="width:100%;padding:0.75rem;border:2px solid #ffb370;border-radius:5px;font-size:1rem;font-family:inherit;background:#fff8f2;resize:vertical;box-sizing:border-box;"></textarea>
-      </div>
-
-      <!-- Out of Appeals -->
-      <div style="margin-bottom: 1.5rem;">
-        <label for="appeals" style="display:block;font-weight:600;margin-bottom:0.5rem;color:#333;">Did Google say that you are out of appeals? *</label>
-        <select name="appeals" id="appeals" required style="width:100%;padding:0.75rem;border:2px solid #ffb370;border-radius:5px;font-size:1rem;background:#fff8f2;box-sizing:border-box;">
-          <option value="">Please select...</option>
-          <option value="Yes">Yes</option>
-          <option value="No">No</option>
-          <option value="Not Sure">Not Sure</option>
-        </select>
-      </div>
-
-      <!-- Express Activation -->
-<div style="margin-bottom: 1.5rem;">
-  <label for="express_activation" style="display:block;font-weight:600;margin-bottom:0.5rem;color:#333;">
-    Do you require express activation (+$225)? <br>
-    <small style="color:#555; font-weight:400;">
-      Typical reactivation within 24 hours.
-    </small>
-  </label>
-  <select name="express_activation" id="express_activation" required style="width:100%;padding:0.75rem;border:2px solid #ffb370;border-radius:5px;font-size:1rem;background:#fff8f2;box-sizing:border-box;">
-    <option value="">Please select...</option>
-    <option value="Yes">Yes</option>
-    <option value="No">No</option>
-  </select>
-</div>
-
-      <!-- Consulting Interest -->
-      <div style="margin-bottom: 1.5rem;">
-        <label for="consulting" style="display:block;font-weight:600;margin-bottom:0.5rem;color:#333;">
-          Interested in GBP consulting services?<br>
-          <small style="color:#555; font-weight:400;">
-            We offer consulting to help your business rank higher on Google Search, so more customers see your business when searching online.
-          </small>
-        </label>
-        <select name="consulting" id="consulting" style="width:100%;padding:0.75rem;border:2px solid #ffb370;border-radius:5px;font-size:1rem;background:#fff8f2;box-sizing:border-box;">
-          <option value="">Please select...</option>
-          <option value="Yes - Call me ASAP">Yes - Call me ASAP</option>
-          <option value="Yes - Email me details">Yes - Email me details</option>
-          <option value="No">No - Just recovery needed</option>
-          <option value="Maybe">Maybe - Tell me more</option>
-        </select>
-      </div>
-
-      <!-- Submit Button -->
-      <div style="text-align:center;margin-top:2rem;">
-        <button type="submit" style="background:linear-gradient(135deg,#cf5a00,#ff7417);color:white;padding:1rem 3rem;font-size:1.1rem;font-weight:bold;border:none;border-radius:8px;cursor:pointer;box-shadow:0 4px 6px rgba(0,0,0,0.1);transition:all 0.3s;">
-          Submit Request
-        </button>
-      </div>
-    </form>
-  </div>
+<section style="background: linear-gradient(to bottom, rgba(255,180,12,0.15), rgba(255,255,255,0)); padding: 3rem 1rem; margin: 3rem 0;">
+    <div style="max-width: 600px; margin: 0 auto;">
+        <h2 style="text-align: center; color: #ff7417; margin-bottom: 2rem;">Request Google Business Profile Reactivation</h2>
+        
+        <form name="gbp-contact" method="POST" data-netlify="true" action="/thank-you.html" id="contact-form" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 15px rgba(255,116,23,0.15); border: 2px solid #ffb40c;">
+            
+            <!-- Netlify form identifier -->
+            <input type="hidden" name="form-name" value="gbp-contact">
+            
+            <!-- Name Field -->
+            <div style="margin-bottom: 1.5rem;">
+                <label for="name" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: #333;">Name *</label>
+                <input type="text" name="name" id="name" required style="width: 100%; padding: 0.75rem; border: 2px solid #ff7417; border-radius: 5px; font-size: 1rem; box-sizing: border-box; background: rgba(255,180,12,0.08);">
+            </div>
+            
+            <!-- Business Name Field -->
+            <div style="margin-bottom: 1.5rem;">
+                <label for="business" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: #333;">Business Name</label>
+                <input type="text" name="business" id="business" style="width: 100%; padding: 0.75rem; border: 2px solid #ff7417; border-radius: 5px; font-size: 1rem; box-sizing: border-box; background: rgba(255,180,12,0.08);">
+            </div>
+            
+            <!-- Email Field -->
+            <div style="margin-bottom: 1.5rem;">
+                <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: #333;">Email *</label>
+                <input type="email" name="email" id="email" required style="width: 100%; padding: 0.75rem; border: 2px solid #ff7417; border-radius: 5px; font-size: 1rem; box-sizing: border-box; background: rgba(255,180,12,0.08);">
+            </div>
+            
+            <!-- Phone Field -->
+            <div style="margin-bottom: 1.5rem;">
+                <label for="phone" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: #333;">Phone Number</label>
+                <input type="tel" name="phone" id="phone" style="width: 100%; padding: 0.75rem; border: 2px solid #ff7417; border-radius: 5px; font-size: 1rem; box-sizing: border-box; background: rgba(255,180,12,0.08);">
+            </div>
+            
+            <!-- Suspended Status -->
+            <div style="margin-bottom: 1.5rem;">
+                <label for="suspended" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: #333;">Is your Google Business Profile currently suspended? *</label>
+                <select name="suspended" id="suspended" required style="width: 100%; padding: 0.75rem; border: 2px solid #ff7417; border-radius: 5px; font-size: 1rem; background: rgba(255,180,12,0.08); box-sizing: border-box;">
+                    <option value="">Please select...</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Not Sure">Not Sure</option>
+                </select>
+            </div>
+            
+            <!-- Suspension Details -->
+            <div style="margin-bottom: 1.5rem;">
+                <label for="suspension_details" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: #333;">Additional details about suspension (optional)</label>
+                <textarea name="suspension_details" id="suspension_details" rows="4" placeholder="Tell us more about your suspension..." style="width: 100%; padding: 0.75rem; border: 2px solid #ff7417; border-radius: 5px; font-size: 1rem; font-family: inherit; resize: vertical; box-sizing: border-box; background: rgba(255,180,12,0.08);"></textarea>
+            </div>
+            
+            <!-- Out of Appeals -->
+            <div style="margin-bottom: 1.5rem;">
+                <label for="appeals" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: #333;">Did Google say that you are out of appeals? *</label>
+                <select name="appeals" id="appeals" required style="width: 100%; padding: 0.75rem; border: 2px solid #ff7417; border-radius: 5px; font-size: 1rem; background: rgba(255,180,12,0.08); box-sizing: border-box;">
+                    <option value="">Please select...</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Not Sure">Not Sure</option>
+                </select>
+            </div>
+            
+            <!-- Express Activation -->
+            <div style="margin-bottom: 1.5rem;">
+                <label for="express_activation" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: #333;">Do you require express activation (+$200)? *</label>
+                <select name="express_activation" id="express_activation" required style="width: 100%; padding: 0.75rem; border: 2px solid #ff7417; border-radius: 5px; font-size: 1rem; background: rgba(255,180,12,0.08); box-sizing: border-box;">
+                    <option value="">Please select...</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            
+            <!-- Consulting Interest -->
+            <div style="margin-bottom: 1.5rem;">
+                <label for="consulting" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: #333;">Interested in GBP consulting services?</label>
+                <select name="consulting" id="consulting" style="width: 100%; padding: 0.75rem; border: 2px solid #ff7417; border-radius: 5px; font-size: 1rem; background: rgba(255,180,12,0.08); box-sizing: border-box;">
+                    <option value="">Please select...</option>
+                    <option value="Yes - Call me ASAP">Yes - Call me ASAP</option>
+                    <option value="Yes - Email me details">Yes - Email me details</option>
+                    <option value="No">No - Just recovery needed</option>
+                    <option value="Maybe">Maybe - Tell me more</option>
+                </select>
+            </div>
+            
+            <!-- Submit Button -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <button type="submit" style="background: linear-gradient(135deg, #cf5a00, #ff7417); color: white; padding: 1rem 3rem; font-size: 1.1rem; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s;">
+                    Submit Request
+                </button>
+            </div>
+            
+        </form>
+    </div>
 </section>
 
         </div>
