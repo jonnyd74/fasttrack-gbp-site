@@ -202,14 +202,15 @@
         <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
             
             <!-- Logo/Brand -->
-            <div style="font-size: 1.5rem; font-weight: bold; color: #ff7417;">
+            <a href="/" style="font-size: 1.5rem; font-weight: bold; color: #ff7417; text-decoration: none;">
                 🚨 GBP Rescue
-            </div>
+            </a>
             
             <!-- Nav Links -->
             <div style="display: flex; gap: 2rem; align-items: center;">
+                <a href="/" style="color: #333; text-decoration: none; font-weight: 600; transition: color 0.3s;">Home</a>
                 <a href="#services" style="color: #333; text-decoration: none; font-weight: 600; transition: color 0.3s;">Services</a>
-                <a href="#locations" style="color: #333; text-decoration: none; font-weight: 600; transition: color 0.3s;">Locations</a>
+                <a href="/locations/" style="color: #333; text-decoration: none; font-weight: 600; transition: color 0.3s;">Locations</a>
                 <a href="#contact-form" style="color: #333; text-decoration: none; font-weight: 600; transition: color 0.3s;">Contact</a>
                 <a href="#contact-form" style="background: linear-gradient(135deg, #cf5a00, #ff7417); color: white; padding: 0.75rem 1.5rem; border-radius: 5px; text-decoration: none; font-weight: bold; transition: all 0.3s;">Get Help Now</a>
             </div>
@@ -238,6 +239,22 @@
             color: #ff7417 !important;
         }
     </style>
+```
+
+---
+
+## **What Changed:**
+
+**Before:**
+```
+🚨 GBP Rescue    Services | Locations | Contact | [Get Help Now]
+  (not clickable)   (scrolls)  (scrolls)
+```
+
+**After:**
+```
+🚨 GBP Rescue    Home | Services | Locations | Contact | [Get Help Now]
+  (→ home)        (→ home) (scrolls) (→ /locations/) (scrolls)
     <header class="header">
         <h2>🚨 GBP Rescue - Google Business Profile (GBP) Recovery Services</h2>
     </header>
