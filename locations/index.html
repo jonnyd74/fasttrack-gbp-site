@@ -1,40 +1,315 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Service Areas — GBP Rescue</title>
-  <meta name="description" content="GBP Rescue - Google Business Profile reactivation services in cities across the United States." />
-  <link rel="stylesheet" href="/assets/styles.css">
-  <style>
-    body{font-family:Arial,Helvetica,sans-serif;background:#fffaf5;color:#222;margin:0;}
-    .container{max-width:1100px;margin:2.5rem auto;padding:0 1rem;}
-    h1{color:#ff7417;text-align:center;margin-bottom:0.5rem;}
-    p.lead{max-width:900px;margin:0 auto 1.75rem;text-align:center;color:#444;}
-    .city-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.9rem;margin-top:1rem;}
-    .city-card{display:block;padding:14px 12px;background:#fff;border:1px solid #ffd4b0;border-radius:8px;text-align:center;text-decoration:none;color:#ff7417;font-weight:600;box-shadow:0 4px 8px rgba(0,0,0,0.03);transition:transform .12s, box-shadow .12s;}
-    .city-card:hover{transform:translateY(-4px);box-shadow:0 8px 18px rgba(0,0,0,0.08);color:#fff;background:linear-gradient(135deg,#ff7417,#cf5a00);border-color:transparent;}
-    .section-cta{text-align:center;margin:2.25rem 0;}
-    .cta-btn{background:linear-gradient(135deg,#cf5a00,#ff7417);color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700;display:inline-block;box-shadow:0 6px 14px rgba(0,0,0,0.12);}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Locations - GBP Rescue | Emergency GBP Recovery Nationwide</title>
+    <meta name="description" content="GBP Rescue provides emergency Google Business Profile recovery services in major cities across the United States. Find your local GBP recovery expert.">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <style>
+        :root {
+            --primary: #ff7417;
+            --secondary: #cf5a00;
+            --accent: #ffb40c;
+            --text: #333;
+            --light: #fff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--text);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--light);
+        }
+        
+        /* Navigation */
+        nav {
+            background: white;
+            border-bottom: 3px solid var(--accent);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav > div {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .nav-cta {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+        
+        /* City Grid */
+        .city-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .city-card {
+            display: block;
+            background: rgba(255,180,12,0.08);
+            border: 2px solid var(--primary);
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .city-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(255,116,23,0.2);
+            border-color: var(--secondary);
+        }
+        
+        .city-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .city-card h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .city-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .city-card .arrow {
+            color: var(--primary);
+            font-weight: 600;
+            margin-top: 0.5rem;
+            display: block;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: rgba(255,180,12,0.1);
+            border-radius: 10px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .cta-section h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 1.2rem 3rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: inline-block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        /* Footer */
+        footer {
+            background: #2c2c2c;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--primary);
+        }
+        
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav > div {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .city-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- optional: include your site header here if you use server-side includes or paste same header -->
-  <div class="container">
-    <h1>We Serve Businesses Nationwide</h1>
-    <p class="lead">Emergency GBP recovery services available in major cities across the United States. Click your city below to learn more about our reactivation services and request immediate help.</p>
-
-    <section class="city-grid" aria-label="Cities served">
-      <!-- Example entries — add one line per city. Update or add more as you create pages -->
-      <a class="city-card" href="/locations/los-angeles-ca.html">Los Angeles, CA</a>
-      <!-- add more links like the line above: /locations/new-york-ny.html, /locations/chicago-il.html, etc -->
-    </section>
-
-    <div class="section-cta">
-      <a class="cta-btn" href="/locations/los-angeles-ca.html">Get Emergency Help Now</a>
+    <!-- Navigation -->
+    <nav>
+        <div>
+            <a href="/" class="logo">🚨 GBP Rescue</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/#services">Services</a>
+                <a href="/locations/">Locations</a>
+                <a href="/#contact-form">Contact</a>
+                <a href="/#contact-form" class="nav-cta">Get Help Now</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <header class="header">
+        <h1>🌎 Emergency GBP Recovery Services Nationwide</h1>
+        <p>We provide fast, reliable Google Business Profile reactivation in major cities across the United States. Select your city below for local service.</p>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <h2 style="text-align: center; color: var(--primary); margin-bottom: 2rem; font-size: 2rem;">
+            Select Your City
+        </h2>
+        
+        <!-- City Grid -->
+        <div class="city-grid">
+            <!-- Los Angeles -->
+            <a href="/locations/los-angeles-ca.html" class="city-card">
+                <div class="icon">📍</div>
+                <h3>Los Angeles, CA</h3>
+                <p>Emergency GBP Recovery</p>
+                <span class="arrow">24-Hour Response →</span>
+            </a>
+            
+            <!-- Add more cities here as you create them -->
+            <!-- Template:
+            <a href="/locations/city-state.html" class="city-card">
+                <div class="icon">📍</div>
+                <h3>City Name, ST</h3>
+                <p>Emergency GBP Recovery</p>
+                <span class="arrow">24-Hour Response →</span>
+            </a>
+            -->
+        </div>
+        
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>Don't See Your City Listed?</h2>
+            <p>We serve businesses nationwide with the same fast, reliable GBP recovery service.<br>
+            Contact us for emergency assistance in any U.S. city.</p>
+            <a href="/#contact-form" class="cta-button">Contact Us for Help</a>
+        </div>
     </div>
-  </div>
-
-  <!-- optional: include your site footer here -->
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 GBP Rescue | <a href="/">Home</a> | <a href="/#contact-form">Contact Us</a></p>
+        <p>Emergency Google Business Profile Recovery Services Nationwide</p>
+    </footer>
+    
+    <!-- Floating Home Button -->
+    <a href="/" style="position: fixed; bottom: 30px; right: 30px; background: linear-gradient(135deg, #cf5a00, #ff7417); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.4); z-index: 9999; transition: transform 0.3s;">
+        🏠
+    </a>
+    
+    <style>
+        a[href="/"]:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </body>
 </html>
