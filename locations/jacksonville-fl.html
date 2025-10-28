@@ -33,7 +33,25 @@
         nav {
             background: #2c2c2c;
             padding: 1rem;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .nav-logo {
+            margin-right: 2rem;
+        }
+        
+        .nav-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
         }
         
         nav a {
@@ -53,15 +71,6 @@
             color: var(--light);
             padding: 2rem 1rem;
             text-align: center;
-        }
-        
-        .header-logo {
-            margin-bottom: 1rem;
-        }
-        
-        .header-logo img {
-            max-width: 200px;
-            height: auto;
         }
         
         .header h2 {
@@ -199,6 +208,25 @@
         }
         
         @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-logo {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .nav-links {
+                flex-direction: column;
+            }
+            
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+            
             .header h2 {
                 font-size: 1.4rem;
             }
@@ -215,28 +243,25 @@
                 display: block;
                 margin: 1rem 0;
             }
-            
-            nav a {
-                display: block;
-                margin: 0.5rem 0;
-            }
         }
     </style>
 </head>
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/services">Services</a>
-        <a href="/locations">Locations</a>
-        <a href="/contact">Contact</a>
-    </nav>
-
-    <header class="header">
-        <div class="header-logo">
+        <div class="nav-logo">
             <a href="/">
                 <img src="/gbp-rescue-logo.png" alt="GBP Rescue Logo">
             </a>
         </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/services">Services</a>
+            <a href="/locations">Locations</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="header">
         <h2>🚨 Google Business Profile (GBP) Recovery Services in Jacksonville, FL</h2>
     </header>
     
