@@ -1,9 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage -->
   <url>
     <loc>https://gbprescue.com/</loc>
     <lastmod>2025-01-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Austin, TX -->
+  <url>
+    <loc>https://gbprescue.com/locations/austin-tx.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Chicago, IL -->
+  <url>
+    <loc>https://gbprescue.com/locations/chicago-il.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Dallas, TX -->
+  <url>
+    <loc>https://gbprescue.com/locations/dallas-tx.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Houston, TX -->
+  <url>
+    <loc>https://gbprescue.com/locations/houston-tx.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Jacksonville, FL -->
+  <url>
+    <loc>https://gbprescue.com/locations/jacksonville-fl.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Los Angeles, CA -->
+  <url>
+    <loc>https://gbprescue.com/locations/los-angeles-ca.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- New York, NY -->
+  <url>
+    <loc>https://gbprescue.com/locations/new-york-ny.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Philadelphia, PA -->
+  <url>
+    <loc>https://gbprescue.com/locations/philadelphia-pa.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Phoenix, AZ -->
+  <url>
+    <loc>https://gbprescue.com/locations/phoenix-az.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- San Diego, CA -->
+  <url>
+    <loc>https://gbprescue.com/locations/san-diego-ca.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- San Jose, CA -->
+  <url>
+    <loc>https://gbprescue.com/locations/san-jose-ca.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
 </urlset>
