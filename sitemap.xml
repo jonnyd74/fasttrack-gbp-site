@@ -9,9 +9,33 @@
     <priority>1.0</priority>
   </url>
   
+  <!-- Atlanta, GA -->
+  <url>
+    <loc>https://gbprescue.com/locations/atlanta-ga.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Austin, TX -->
   <url>
     <loc>https://gbprescue.com/locations/austin-tx.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Boston, MA -->
+  <url>
+    <loc>https://gbprescue.com/locations/boston-ma.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Charlotte, NC -->
+  <url>
+    <loc>https://gbprescue.com/locations/charlotte-nc.html</loc>
     <lastmod>2025-01-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -33,6 +57,22 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Denver, CO -->
+  <url>
+    <loc>https://gbprescue.com/locations/denver-co.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Detroit, MI -->
+  <url>
+    <loc>https://gbprescue.com/locations/detroit-mi.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Houston, TX -->
   <url>
     <loc>https://gbprescue.com/locations/houston-tx.html</loc>
@@ -49,9 +89,33 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Las Vegas, NV -->
+  <url>
+    <loc>https://gbprescue.com/locations/las-vegas-nv.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- Los Angeles, CA -->
   <url>
     <loc>https://gbprescue.com/locations/los-angeles-ca.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Miami, FL -->
+  <url>
+    <loc>https://gbprescue.com/locations/miami-fl.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Minneapolis, MN -->
+  <url>
+    <loc>https://gbprescue.com/locations/minneapolis-mn.html</loc>
     <lastmod>2025-01-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -81,6 +145,14 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Portland, OR -->
+  <url>
+    <loc>https://gbprescue.com/locations/portland-or.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
   <!-- San Diego, CA -->
   <url>
     <loc>https://gbprescue.com/locations/san-diego-ca.html</loc>
@@ -92,6 +164,14 @@
   <!-- San Jose, CA -->
   <url>
     <loc>https://gbprescue.com/locations/san-jose-ca.html</loc>
+    <lastmod>2025-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Seattle, WA -->
+  <url>
+    <loc>https://gbprescue.com/locations/seattle-wa.html</loc>
     <lastmod>2025-01-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
